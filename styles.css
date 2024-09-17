@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: rgb(224, 241, 247);
+}
+aside {
+  width: 17%;
+  height: 100vh;
+  position: fixed;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+
+  top: 0;
+}
+aside a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+aside span {
+  margin-left: 1rem;
+}
+aside span:hover {
+  color: orange;
+}
+aside a:active {
+  color: orange;
+}
+aside i {
+  font-size: 1.4rem;
+}
+/* aside a:visited {
+  color: orange;
+} */
+aside img {
+  width: 40%;
+  margin-left: 2.2rem;
+  margin-top: 2rem;
+}
+aside button {
+  font-size: 0.7rem;
+  width: 90px;
+  height: 2.3rem;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  background-color: red;
+  margin-left: 4rem;
+}
+/* header */
+section {
+  margin-left: 17rem;
+}
+header {
+  width: 99%;
+  height: 4rem;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+header img:hover {
+  border: 5px solid skyblue;
+  /* scale: 1.1; */
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgb(11, 240, 11);
+  position: absolute;
+  right: 8.5rem;
+  top: 1.4rem;
+}
+.div1 {
+  width: 200px;
+  display: flex;
+  margin-right: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.div1 img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin: 0px 1rem;
+  position: relative;
+}
+.dropdown:hover .drop {
+  display: block;
+  z-index: 2;
+}
+header > div {
+  margin-left: 1rem;
+}
+.div1 i {
+  font-size: 1.8rem;
+}
+
+/* dropdown */
+.drop {
+  background-color: white;
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  top: 4rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px lightgrey;
+  display: none;
+}
+.drop i {
+  font-size: 1.2rem;
+  color: orange;
+  margin-right: 1rem;
+}
+.drop p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.8rem;
+}
+.drop p:hover {
+  color: orange;
+}
+
+/* main */
+main {
+  width: 99%;
+}
+main i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.div2 {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 11rem;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+.profile hr {
+  width: 90%;
+}
+.profile:hover {
+  filter: brightness(0.5);
+  scale: 1.1;
+  transition: 0.4s;
+}
+
+/* record */
+.record {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.record:hover {
+  filter: brightness(0.5);
+  scale: 1.1;
+  transition: 0.4s;
+}
+.record > div {
+  background-color: rgb(50, 57, 97);
+  width: 99%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: white;
+  gap: 1px;
+  border-radius: 4px;
+}
+.record > b {
+  padding-top: 10px;
+  margin-bottom: -5px;
+}
+.record > div > div {
+  margin-left: 3rem;
+  margin-top: 5px;
+}
+.record span {
+  color: rgb(152, 151, 151);
+}
+.div2 > div {
+  width: 28%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+/* assignment */
+.assignment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.assignment hr {
+  width: 97%;
+}
+.assignment:hover {
+  filter: brightness(0.5);
+  scale: 1.1;
+  transition: 0.4s;
+}
+/* attendance */
+.attendance {
+  width: 99%;
+  height: 45vh;
+  background-color: white;
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.attendance > div {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+}
+.r {
+  font-size: 1.7rem;
+  color: orange;
+}
+.heading {
+  position: sticky;
+  top: 0;
+}
+.heading1 {
+  position: sticky;
+  top: 3rem;
+  font-size: 1.3rem;
+}
+.attendance > div > h4 {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+.attendance > div > h2 {
+  margin-right: 35rem;
+  color: rgb(12, 132, 179);
+}
+
+.attendance .div3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgb(29, 137, 180);
+  color: white;
+  margin-bottom: 0.5rem;
+  height: 3rem;
+}
+.attendance .div4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+.attendance .div4 :nth-child(4) {
+  color: white;
+  background-color: rgb(48, 176, 226);
+  width: 4rem;
+  height: 1.8rem;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 6px;
+}
+/* progress */
+.progress {
+  width: 100%;
+  height: 44vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.progress > div {
+  width: 16%;
+  height: 60%;
+  background-color: rgb(50, 57, 97);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20rem;
+}
+.progress > div > div {
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  border-radius: 20rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.progress i {
+  font-size: 1.6rem;
+}
+.progress > div > div > b {
+  font-size: 1.4rem;
+}
+.progress > div > div :nth-child(2) {
+  color: orange;
+}
+/* iframe/ */
+iframe {
+  width: 99%;
+  height: 100vh;
+}
